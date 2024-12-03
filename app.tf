@@ -114,6 +114,7 @@ terraform {
 provider "yandex" {
   folder_id = var.folder-id
   token     = var.yc-token
+}
 
 variable "folder-id" {
   type = string
