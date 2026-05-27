@@ -114,9 +114,8 @@ Run `./upload_ydb_schema.sh`.
 
 Functions can be deployed using [terraform](http://terraform.io). After terraform initialized, you can deploy your application with
 
-`terraform apply -var-file ./variables.json -var yc-token=<OAuth token>`
+`terraform apply -var-file ./variables.json -var yc-token="$(yc iam create-token)"`
 
-Where `OAuth token` - [OAuth token](https://cloud.yandex.ru/docs/iam/concepts/authorization/oauth-token) for your cloud.
 
 ### Upload static
 
